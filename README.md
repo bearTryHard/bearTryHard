@@ -1,16 +1,402 @@
-## Hi there 👋
 
-<!--
-**bearTryHard/bearTryHard** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-Here are some ideas to get you started:
+-- Expiry Date Setup
+local expiry_date = os.time{year=2025, month=4, day=31}
+local current_date = os.time()
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+if current_date >= expiry_date then
+    gg.alert(" SCRIPT EXPIRED \n\n Please Join Telegram For More Update.")
+    os.exit()
+end
+
+gg.alert("🔥 Bear ~ ꜱᴀꜰᴇ ꜱᴄʀɪᴩᴛ 🔥")
+gg.toast('coi chừng bị bế đi nhá 🤡')
+
+--- Menu Function ---
+function main()
+    local menu = gg.multiChoice({
+        "Headshot 100℅",
+        "AIM AWM",
+        "Đổi súng nhanh",
+        "Atenna đầu",
+        "Mod Skin",
+        "❌ ᴇxɪᴛ ❌"
+    }, nil, os["date"](
+    "🔥 Vui lòng chọn chức năng 🔥 \n Share by BEAR ZYY \n------------------------\n Hôm nay: Ngày %d Tháng %m Năm %Y \n Bây giờ: %H:%M"))
+
+    if menu then
+        if menu[1] then Headshot() end
+        if menu[2] then AimAwm() end
+        if menu[3] then Fast() end
+        if menu[4] then antibanHead() end
+        if menu[5] then HOME() end
+        if menu[6] then exitScript() end
+    end
+end
+
+--- Head shot Function ---
+function Headshot()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber(';bone_Spine')
+    gg.getResults(gg.getResultsCount())
+    gg.editAll(';bone_Head1', gg.TYPE_WORD)
+    gg.clearResults()
+    gg.searchNumber('-0.04462028295', gg.TYPE_FLOAT)
+    gg.getResults(gg.getResultsCount())
+    gg.editAll('-0.03999999911', gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.searchNumber('-0.03881515563', gg.TYPE_FLOAT)
+    gg.getResults(gg.getResultsCount())
+    gg.editAll('0.05000000075', gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.searchNumber('0.07869631797;0.99689865112;1;1;1::17', gg.TYPE_FLOAT)
+    gg.refineNumber('1', gg.TYPE_FLOAT)
+    gg.getResults(gg.getResultsCount())
+    gg.editAll('-1.5', gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.searchNumber('0.98958933353F;1;1;1::17', gg.TYPE_FLOAT)
+    gg.refineNumber('1', gg.TYPE_FLOAT)
+    gg.getResults(gg.getResultsCount())
+    gg.editAll('-1.5', gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.toast('HEADSHOT 💯 ☠️✨')
+end
+
+--- Aim Awm ---
+function AimAwm()
+gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("8.40779079e-45F;0D;0F;30F;50F;0.5F::33", gg.TYPE_DWORD)
+    gg.refineNumber("0", gg.TYPE_DWORD)
+    gg.getResults(1)
+    gg.editAll("-1", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("AWM AIMBOT ON☑️")
+end
+
+--- đổi súng nhanh ---
+function Fast()
+gg.setRanges(gg.REGION_ANONYMOUS | gg.REGION_CODE_APP)
+    gg.searchNumber("h 00 00 00 00 3f 00 00 80 3e", gg.TYPE_BYTE)
+    gg.getResults(100)
+    gg.editAll("h 00 ec 51 b8 3d 8f c2 f5 3c", gg.TYPE_BYTE)
+    gg.clearResults()
+    gg.toast("FAST SWITCH ON☑️")
+end
+
+
+--- Antiban Head Function ---
+function antibanHead()
+    gg.toast("ANTINA HEAD Activated")
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber('5.9762459e-7;1::5 ', gg.TYPE_FLOAT)
+gg.refineNumber('1', gg.TYPE_FLOAT)
+gg.getResults(gg.getResultsCount())
+gg.editAll('3000', gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber('7.5538861e-7;1::5', gg.TYPE_FLOAT)
+gg.refineNumber('1', gg.TYPE_FLOAT)
+gg.getResults(gg.getResultsCount())
+gg.editAll('3000', gg.TYPE_FLOAT)
+gg.clearResults()
+end
+
+---- MOD Skin ----
+function HOME()
+    AVATAR = gg.choice({
+      "☑️EMOTE lv7 PARAFAL",
+      "☑️EMOTE lv7 PISTOLA",
+      "☑️EMOTE lv7 MP40 NOVA",
+      "☑️EMOTE lv7 MP1014 VERMELHA",
+      "☑️EMOTE lv7 AN94",
+      "☑️EMOTE lv7 GROZA",
+      "☑️EMOTE lv7 THOMPSOM",
+      "☑️EMOTE lv7 M4A1",
+      "☑️EMOTE lv7 MP5",
+      "☑️EMOTE nắm đấm",
+      "☑️EMOTE lv7 M1887 ",
+      "☑️EMOTE lv7 FAMAS",
+      "☑️EMOTE lv7 XM8",
+      "☑️EMOTE lv7 UMP",
+      "☑️EMOTE lv7 SCAR",
+      "☑️EMOTE lv7 AK47",
+      "☑️EMOTE lv7 MP40 V2",
+      "☑️EMOTE lv7 M1014 V2",
+      "☑️mod katana lv7",
+      "❌thoát❌"
+    }, nil, os["date"](
+        " Share by BEAR ZYY \n------------------------\n Hôm nay: Ngày %d Tháng %m Năm %Y \n Bây giờ: %H:%M"))
+    gg.toast(" KAV EXPENSIVE ")
+    if AVATAR == nil then
+    else
+      if AVATAR == 1 then
+        B1()gg.isVisible(false) 
+      end
+      if AVATAR == 2 then
+        B2()gg.isVisible(false)
+      end
+      if AVATAR == 3 then
+        B3()gg.isVisible(false)
+      end
+      if AVATAR == 4 then
+        B4()gg.isVisible(false)
+      end
+      if AVATAR == 5 then
+        B5()gg.isVisible(false)
+      end
+      if AVATAR == 6 then
+        B6()gg.isVisible(false)
+      end
+      if AVATAR == 7 then
+        B7()gg.isVisible(false)
+      end
+      if AVATAR == 8 then
+        B8()gg.isVisible(false)
+      end
+      if AVATAR == 9 then
+        B9()gg.isVisible(false)
+      end
+      if AVATAR == 10 then
+        B10()gg.isVisible(false)
+      end
+      if AVATAR == 11 then
+        B11()gg.isVisible(false)
+      end
+      if AVATAR == 12 then
+        B12()gg.isVisible(false)
+      end
+      if AVATAR == 13 then
+        B13()gg.isVisible(false)
+      end
+      if AVATAR == 14 then
+        B14()gg.isVisible(false)
+      end
+      if AVATAR == 15 then
+        B15()gg.isVisible(false)
+      end
+      if AVATAR == 16 then
+        B16()gg.isVisible(false)
+      end
+      if AVATAR == 17 then
+        B17()gg.isVisible(false)
+      end
+      if AVATAR == 18 then
+        B18()gg.isVisible(false)
+      end
+      if AVATAR == 19 then
+        B19()gg.isVisible(false)
+      end
+      if AVATAR == 20 then
+        return;
+      end
+    end
+    LuDLibrDryTool = -1
+  end
+  
+  function B1()
+    gg.clearResults()   
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909047020", gg.TYPE_DWORD)
+    gg.getResults(10000000)
+    gg.editAll("909045001", gg.TYPE_DWORD)
+    gg.clearResults()   
+    gg.toast("Đã Bật")
+  end
+  
+  function B2()
+    gg.clearResults()    
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909047020", gg.TYPE_DWORD)
+    gg.getResults(10000000)
+    gg.editAll("909038012", gg.TYPE_DWORD)
+    gg.clearResults()    
+    gg.toast("✅Đã Bật✅")
+  end
+  
+  function B3()
+    gg.clearResults()    
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909047020", gg.TYPE_DWORD)
+    gg.getResults(10000000)
+    gg.editAll("909040010", gg.TYPE_DWORD)
+    gg.clearResults()    
+    gg.toast("✅Đã Bật✅")
+  end
+  
+  function B4()
+    gg.clearResults()    
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909047020", gg.TYPE_DWORD)
+    gg.getResults(10000000)
+    gg.editAll("909039011", gg.TYPE_DWORD)
+    gg.clearResults()    
+    gg.toast("✅Đã Bật✅")
+  end
+  
+  function B5()
+    gg.clearResults()    
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909047020", gg.TYPE_DWORD)
+    gg.getResults(10000000)
+    gg.editAll("909035012", gg.TYPE_DWORD)
+    gg.clearResults()    
+    gg.toast("✅Đã Bật✅")
+  end
+  
+  function B6()
+    gg.clearResults()    
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909047020", gg.TYPE_DWORD)
+    gg.getResults(10000000)
+    gg.editAll("909041005", gg.TYPE_DWORD)
+    gg.clearResults()    
+    gg.toast("✅Đã Bật✅")
+  end
+  
+  function B7()
+    gg.clearResults()    
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909047020", gg.TYPE_DWORD)
+    gg.getResults(10000000)
+    gg.editAll("909038010", gg.TYPE_DWORD)
+    gg.clearResults()    
+    gg.toast("✅Đã Bật✅")
+  end
+  
+  function B8()
+    gg.clearResults()    
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909047020", gg.TYPE_DWORD)
+    gg.getResults(10000000)
+    gg.editAll("909033001", gg.TYPE_DWORD)
+    gg.clearResults()    
+    gg.toast("✅Đã Bật✅")
+  end
+  
+  function B9()
+    gg.clearResults()    
+    gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("909000001~909047020", gg.TYPE_DWORD)
+    gg.getResults(10000000)
+    gg.editAll("909033002", gg.TYPE_DWORD)
+    gg.clearResults()    
+    gg.toast("✅Đã Bật✅")
+  end
+  
+  function B10()
+    gg.clearResults()    
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909047020", gg.TYPE_DWORD)
+    gg.getResults(10000000)
+    gg.editAll("909037011", gg.TYPE_DWORD)
+    gg.clearResults()    
+    gg.toast("✅Đã Bật✅")
+  end
+  
+  function B11()
+    gg.clearResults()    
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909047020", gg.TYPE_DWORD)
+    gg.getResults(10000000)
+    gg.editAll("909035007", gg.TYPE_DWORD)
+    gg.clearResults()    
+    gg.toast("✅Đã Bật✅")
+  end
+  
+  function B12()
+    gg.clearResults()    
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909047020", gg.TYPE_DWORD)
+    gg.getResults(10000000)
+    gg.editAll("909000090", gg.TYPE_DWORD)
+    gg.clearResults()    
+    gg.toast("✅Đã Bật✅")
+  end
+  
+  function B13()
+    gg.clearResults()    
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909047020", gg.TYPE_DWORD)
+    gg.getResults(10000000)
+    gg.editAll("909000085", gg.TYPE_DWORD)
+    gg.clearResults()    
+    gg.toast("✅Đã Bật✅")
+  end
+  
+  function B14()
+    gg.clearResults()    
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909047020", gg.TYPE_DWORD)
+    gg.getResults(10000000)
+    gg.editAll("909000098", gg.TYPE_DWORD)
+    gg.clearResults()    
+    gg.toast("✅Đã Bật✅")
+  end
+  
+  function B15()
+    gg.clearResults()    
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909047020", gg.TYPE_DWORD)
+    gg.getResults(10000000)
+    gg.editAll("909000068", gg.TYPE_DWORD)
+    gg.clearResults()    
+    gg.toast("✅Đã Bật✅")
+  end
+  
+  function B16()
+    gg.clearResults()    
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909047020", gg.TYPE_DWORD)
+    gg.getResults(10000000)
+    gg.editAll("909000063", gg.TYPE_DWORD)
+    gg.clearResults()    
+    gg.toast("✅Đã Bật✅")
+  end
+  
+  function B17()
+    gg.clearResults()    
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909047020", gg.TYPE_DWORD)
+    gg.getResults(10000000)
+    gg.editAll("909000075", gg.TYPE_DWORD)
+    gg.clearResults()    
+    gg.toast("✅Đã Bật✅")
+  end
+  
+  function B18()
+    gg.clearResults()    
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909047020", gg.TYPE_DWORD)
+    gg.getResults(10000000)
+    gg.editAll("909000081", gg.TYPE_DWORD)
+    gg.clearResults()    
+    gg.toast("✅Đã Bật✅")
+  end
+  
+  function B19()
+    gg.clearResults()    
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909047020", gg.TYPE_DWORD)
+    gg.getResults(10000000)
+    gg.editAll("909042008", gg.TYPE_DWORD)
+    gg.clearResults()    
+    gg.toast("✅Đã Bật✅")
+  end
+
+
+
+
+
+
+--- Exit Function ---
+function exitScript()
+    gg.toast("Exiting Script...")
+    os.exit()
+end
+
+--- Main Loop ---
+while true do
+    if gg.isVisible(true) then
+        gg.setVisible(false)
+        main()
+    end
+end
