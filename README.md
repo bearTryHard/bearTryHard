@@ -15,7 +15,7 @@ gg.toast('coi chừng bị bế đi nhá 🤡')
 --- Menu Function ---
 function main()
     local menu = gg.multiChoice({
-        "Headshot 100℅",
+        "Headshot 100℅ (Bụng)",
         "AIM AWM",
         "Đổi súng nhanh",
         "Atenna đầu",
